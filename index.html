@@ -1,114 +1,50 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
-    <html lang="en">
-        <head>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-            <link href="styles.css" rel="stylesheet">
-            <title>Harrison's Portfolio</title>
-            <script>
-                // TODO: Add code to check answers to questions
-                document.addEventListener('DOMContentLoaded', function(){
-                    function check(id, message){
-                        let button = document.querySelector(`#${id}`);
-                        button.style.backgroundColor = 'green';
-                        //button timing
-                        message.style.visibility = 'visible';
-                        if (button.timeoutId) {
-                            clearTimeout(button.timeoutId);
-                        }
-                        setTimeout(function(){
-                            button.style.backgroundColor = '';
-                            message.style.visibility = 'hidden';
-                        }, 1000);
-                    }
-                var message1 = document.querySelector('b1'); //Incorrect
-                var message2 = document.querySelector('b2'); //Correct
-                var message3 = document.querySelector('b3'); //Incorrect
-                var message4 = document.querySelector('b4'); //Incorrect
-                message1.style.visibility = 'hidden';
-                message2.style.visibility = 'hidden';
-                message3.style.visibility = 'hidden';
-                message4.style.visibility = 'hidden';
-                    
-                document.querySelector('#id1').addEventListener('click', function(){
-                    check('id1', message1);
-                });
-                document.querySelector('#id2').addEventListener('click', function(){
-                    check('id2', message2);
-                });
-                document.querySelector('#id3').addEventListener('click', function(){
-                    check('id3', message3);
-                });
-                document.querySelector('#id4').addEventListener('click', function(){
-                    check('id4', message4);
-                })
-            });
-            </script>
-        </head>
-        <body>
-            <div class="header">
-                <h1>Harrison's Portfolio</h1>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Media Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"></a>
+        </header>
+            <a href="#" class="active"> Home </a>
+        <nav>
+            <a href="#"> Name</a>
+            <a href="#"> No Face</a>
+            <a href="#"> Storyline</a>
+            <a href="#"> Winter Concert</a>
+            <a href="#"> Minecraft</a>
+            <a href="#"> AI</a>
+        </nav>
+        <section class="home">
+            <div class="home-img">
+                <img src="Profile.JPEG" alt="">
             </div>
-            <div class="container">
-                <div class="section">
-                    <h2> Part 1: The Facts Section </h2>
-                    <hr>
-                    <!-- TODO: Add multiple choice question here -->
-                    <button id="id1">Fact 1</button>
-                    <button id="id2">Fact 2</button>
-                    <button id="id3">Fact 3</button>
-                    <button id="id4">Fact 4</button>
-                    <div> <b> <ol> <li>
-                        <b1 class="hidden">Harrison goes climbing every weekend. (Or at least tries to) </b1> 
-                        <b2 class="hidden">Harrison codes stuff probably (like this website)</b2> 
-                        <b3 class="hidden">Harrson does stuff</b3> 
-                        <b4 class="hidden">Harrison does more stuff</b4> 
-                    </div> </li> </ol> </b> 
-                </div>
-                <div class="section">
-                    <h2>Part 2: Free Response</h2>
-                    <hr>
-                    <!-- TODO: Add free response question here -->
-                <h3>
-                    What is Harrison's favorite number?
-                </h3>
-                    <form>
-                        <input autocomplete="off" autofocus name="q" placeholder="Answer" type="search">
-                        <button type="submit">Submit</button>
-                    </form>
-                <br>
-                <script>
-                    document.querySelector('form').addEventListener('submit', function(event) {
-                        event.preventDefault();
-                        //Stuff
-                        let input = document.querySelector('input[name="q"]');
-                        let answer = input.value.toLowerCase().trim();
-                        if (input.timeoutId) {
-                            clearTimeout(input.timeoutId);
-                        }
-                        // Compare with the correct answer
-                        if (answer === '8' || answer === 'eight') {
-                            input.style.backgroundColor = '#00ff00'; // Green for correct answer
-                            input.timeoutId = setTimeout(function() {
-                                input.style.backgroundColor = '';
-                            }, 2000);
-                        } else {
-                            input.style.backgroundColor = '#ff0000'; // Red for incorrect answer
-                            input.timeoutId = setTimeout(function() {
-                                input.style.backgroundColor = '';
-                            }, 2000);
-                        }
-                    });
-                </script>
+            <div class="home-content">
+                <h1>Hi, it's <span>Harrison</span></h1>
+                <h3 class="typing text"> I'm a </h3>
+                <p>blah blah lah</p>
+                <div class="social-icons">
+                    <a href="#"> <i class="fa-brands fa-github"></i></a>
+                    <a href="#"> <i class="fa-brands fa-js"></i></a>
+                    <a href="#"> <i class="fa-brands fa-linux"></i></a>
                 </div>
             </div>
-            <img src="AI comic.png" alt="AI comic">
-            <img src="AI Face.jpg" alt="AI Face">
-            <img src="Cosmic Wardrobe.png" alt="Cosmic Wardrobe">
-            <img src="Jun the GOAT.JPG.png" alt="Jun the GOAT">
-            <img src="Math meme.png" alt="Math meme">
-            <img src="Minecraft Moodboard.png" alt="Minecraft Moodboard">
-            <img src="Minecraft Thumbnail.png" alt="Minecraft Thumbnail">
-            <img src="Storyline Project.png" alt="Storyline Proj">
-        </body>
-    </html>
+        </section>
+        <!-- <img src="AI comic.png" alt="AI comic">
+        <img src="AI Face.jpg" alt="AI Face">
+        <img src="Minecraft Moodboard.png" alt="Minecraft Moodboard">
+        <img src="Minecraft Thumbnail.png" alt="Minecraft Thumbnail">
+        <img src="Jun the GOAT.JPG" alt="Jun the GOAT">
+        <img src="Storyline Project.png" alt="Storyline Proj"> 
+        <img src="Cosmic Wardrobe.png" alt="Cosmic Wardrobe">
+        <img src="Math meme.png" alt="Math meme">-->
+        
+        
+    </body>
+</html>
