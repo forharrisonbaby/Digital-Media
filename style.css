@@ -68,20 +68,7 @@ nav a:hover, nav a.active{
   border-bottom: 3px solid green;
 }
 
-@media(max-width:995px){
-  nav {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 40%;
-    border-left: 3px solid green;
-    border-bottom: 3px solid green;
-    border-bottom-left-radius: 2rem;
-    padding: 1rem solid;
-    background-color: rgb(10, 105, 139);
-    border-top: 0.1rem solid rgba(0,0,0,0.1);
-  }
-}
+
 
 nav.active{
   display: block
@@ -131,10 +118,26 @@ span{
   border-radius: 50;
 }
 
+.home-content p{
+  color: greenyellow
+}
+
+.typing-text{
+  color: green;
+}
+
 .home-img img{
   position: relative;
   width: 32vw;
   border-radius: 50%;
+  box-shadow: 0 0 25px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.img img{
+  position: relative;
+  width: 32vw;
   box-shadow: 0 0 25px;
   cursor: pointer;
   transition: 0.2s linear;
