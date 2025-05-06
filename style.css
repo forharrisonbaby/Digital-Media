@@ -108,6 +108,10 @@ span{
   color: green
 }
 
+.webhub{
+  color: red
+}
+
 .home-content h3{
   font-size: 4rem;
   margin-bottom: 1rem;
